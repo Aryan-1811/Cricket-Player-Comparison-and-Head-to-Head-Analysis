@@ -1,45 +1,54 @@
 # Cricket-Player-Comparison-and-Head-to-Head-Analysis
-A data-driven look at player performance using ODI and IPL delivery-level data.  
-This repo contains two focused case studies:
-1) **Sachin Tendulkar vs Virat Kohli** - ODI batting comparison with normalization, strike rate, conversion to 50s/100s, and team contribution.
-2) **AB de Villiers vs Jasprit Bumrah** - IPL batter–bowler matchup using ball-by-ball outcomes and visual exploration.
+This project compares cricket players using data analytics and visualization techniques.  
+It focuses on two detailed case studies built with real match data from ODIs and the IPL.
 
----
+## Case Studies
 
-## Notebooks
-- `Case_Study_Virat_vs_Sachin_.ipynb`  
-  Uses `ODI_data.csv`. Includes:
-  - Normalization across eras/contexts
-  - Strike rate and scoring frequency
-  - Matches per 50 and per 100
-  - Team contribution ratios
-  - Visualizations summarizing consistency and impact
+### 1. Sachin Tendulkar vs Virat Kohli (ODIs)
+This notebook analyses batting performance using `ODI_data.csv`.
 
-- `Case_Study_ABD_vs_Bumrah.ipynb`  
-  Uses IPL ball-by-ball data. Includes:
-  - Delivery-level filtering for ABD vs Bumrah
-  - Scatter and summary plots (e.g., strike rate vs runs off bat)
-  - Exploratory matchup insights
+Key points:
+- Normalization applied to compare players across eras  
+- Strike rate and scoring patterns explored through grouped data  
+- Bar charts of runs by year and by player  
+- Analysis of consistency and contribution to team totals  
 
----
+### 2. AB de Villiers vs Jasprit Bumrah (IPL)
+This notebook analyses IPL ball-by-ball data (`ipl_ball_by_ball_data.csv`).
 
-## Data
-- `ODI_data.csv` - ODI records with columns such as player, runs, balls, minutes, fours, sixes, opposition, ground, date, country, not out, result.
-- `ipl_ball_by_ball_data.csv` - IPL delivery-level data with match metadata, innings, ball index, batter, bowler, runs, extras, dismissals, etc.
+Key points:
+- Player vs player matchup analysis between ABD and Bumrah  
+- Strike rate and runs distribution across different matchups  
+- Scatter plots showing performance trends  
+- Visual exploration of how Bumrah restricts top batters  
 
----
+## 🎯 Objectives
+- Compare player performances statistically and visually  
+- Understand scoring consistency and situational dominance  
+- Use Python data analysis to extract cricket insights  
 
-## Methods and metrics
-- **Normalization** to compare across eras and contexts
-- **Strike rate** and **scoring frequency**
-- **Conversion** to fifties and hundreds (matches per 50/100)
-- **Team contribution** ratios
-- **Delivery-level matchup** exploration for ABD vs Bumrah (runs off bat, dismissals, dot-ball pressure)
-- **Visualizations** using Matplotlib for quick comparisons
+## Tools and Libraries
+- Python  
+- Pandas and NumPy for data wrangling  
+- Matplotlib and Seaborn for visualization  
+- Jupyter Notebook for interactive analysis  
 
----
+## Datasets
+- **ODI_data.csv** – Player innings-level ODI data with runs, balls faced, boundaries and dates  
+  https://drive.google.com/file/d/1bnV0nMSnh6539iaPPxH8ffEbllamgCVI/view?usp=sharing
 
-## Environment
-Install the core libraries:
-```bash
-pip install pandas numpy matplotlib jupyter
+- **ipl_ball_by_ball_data.csv** – IPL ball-by-ball data with batsman, bowler, runs, wickets and match info  
+  https://drive.google.com/file/d/1m2mEOvVDinwEEpXOGAdjDrrSPAzF2ulj/view?usp=sharing
+
+(Datasets are not included in the repository due to size limits. Place them in a local `data` folder before running the notebooks.)
+
+## How to Use
+1. Download both notebooks and datasets  
+2. Place the datasets in a folder named `data`  
+3. Open the notebooks in Jupyter  
+4. Run all cells to generate visual comparisons  
+
+## Insights
+- Normalization enables fair comparison of players from different eras (Sachin vs Virat)  
+- ABD’s strike rate patterns visualized against various IPL bowlers  
+- Bumrah stands out as one of the toughest bowlers to score against in the IPL  
